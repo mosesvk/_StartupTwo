@@ -1,5 +1,5 @@
 
-import './Brand.css'
+import './brand.css'
 
 const Brand = () => {
   return (

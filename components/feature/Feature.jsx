@@ -1,5 +1,5 @@
 
-import './Feature.css'
+import './feature.css'
 
 const Feature = () => {
   return (
