@@ -1,5 +1,5 @@
 
-import './about.css'
+import styles from './about.module.css'
 
 const About = () => {
   return (

@@ -1,5 +1,5 @@
 
-import './cta.css'
+import styles from './cta.module.css'
 
 const CTA = () => {
   return (

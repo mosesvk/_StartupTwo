@@ -1,5 +1,5 @@
 
-import './article.css'
+import styles from './article.module.css'
 
 const Article = () => {
   return (

@@ -1,5 +1,5 @@
 
-import './possibility.css'
+import styles from './possibility.module.css'
 
 const Possibility = () => {
   return (
