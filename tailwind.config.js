@@ -8,7 +8,7 @@ module.exports = {
       fontFamily: {
         'serif': ['Manrope', 'sans-serif']
       }
-    },
+    }
   },
   plugins: [
     function ({ addVariant }) {

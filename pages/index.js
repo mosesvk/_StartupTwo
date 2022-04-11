@@ -19,7 +19,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div>
-        <div className='bg-gray-500'>
+        <div className='bg-stone-800'>
           <Navbar />
           <Header />
         </div>

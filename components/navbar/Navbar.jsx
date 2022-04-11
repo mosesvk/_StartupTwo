@@ -19,6 +19,10 @@ const Navbar = () => {
           <Link as='p' href='#features'>Case Studies</Link>
           <Link as='p' href='#blog'>Library</Link>
         </div>
+        <div className='flex justify-end items-center'>
+          <p className='navbar-p'>Sign in</p>
+          <button type='button' className='navbar-button'>Sign up</button>
+        </div>
       </div>
     </div>
   )
