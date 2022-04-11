@@ -11,24 +11,24 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center	py-8 px-24'>
-      <div className='flex-1 flex justify-center items-center'>
+      <div className='flex-1 flex justify-around items-center'>
         <div className='mr-8'>
           <Image src={logo} alt='logoImg' height='62.56px' width='60.02px' />
         </div>
         <div className='hidden lg:flex lg:flex-row child:navbar-p'>
-          <Link as='p' href='#home'>
+          <Link href='#home'>
             Home
           </Link>
-          <Link as='p' href='#about'>
+          <Link href='#about'>
             About
           </Link>
-          <Link as='p' href='#possibility'>
+          <Link href='#possibility'>
             Explore
           </Link>
-          <Link as='p' href='#features'>
+          <Link href='#features'>
             Case Studies
           </Link>
-          <Link as='p' href='#blog'>
+          <Link href='#blog'>
             Library
           </Link>
         </div>
