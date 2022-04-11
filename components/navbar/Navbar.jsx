@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className='mr-8'>
           <Image src={logo} alt='logoImg' height='62.56px' width='60.02px'/>
         </div>
-        <div className='flex flex-row'>
+        <div className='flex flex-row child:navbar-p'>
           <Link as='p' href='#home'>Home</Link>
           <Link as='p' href='#about'>About</Link>
           <Link as='p' href='#possibility'>Explore</Link>
