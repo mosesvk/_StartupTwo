@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='mr-8'>
           <Image src={logo} alt='logoImg' height='62.56px' width='60.02px' />
         </div>
-        <div className='flex flex-row child:navbar-p'>
+        <div className='hidden lg:flex lg:flex-row child:navbar-p'>
           <Link as='p' href='#home'>
             Home
           </Link>
@@ -32,20 +32,20 @@ const Navbar = () => {
             Library
           </Link>
         </div>
-        <div className='flex justify-end items-center'>
+        <div className='hidden lg:flex justify-end items-center'>
           <p className='navbar-p'>Sign in</p>
           <button type='button' className='navbar-button'>
             Sign up
           </button>
         </div>
-        {/* <div className='ml-4 hidden relative'>
+        <div className='ml-4 relative lg:hidden '>
           {toggleMenu
-            ? <RiCloseLine color='fff' size={27} onClick={() => setToggleMenu(true)} />
-            : <RiMenuLine color='fff' size={27} onClick{() => setToggleMenu(true)}
+            ? <RiCloseLine color='fff' size={27} onClick={() => setToggleMenu(false)} />
+            : <RiMenu3Line color='fff' size={27} onClick={() => setToggleMenu(true)} />
           }
           {toggleMenu && (
             <div className='flex flex-end items-end flex-col bg-blue-900 p-8 absolute right-0 mt-4 min-w-210 rounded-md shadow-md'>
-              <div>
+              <div className='flex flex-col child:navbar-p'>
                 <Link as='p' href='#home'>Home</Link>
                 <Link as='p' href='#about'>About</Link>
                 <Link as='p' href='#possibility'>Explore</Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
               </div>
             </div>
           )}
-        </div> */}
+        </div>
       </div>
     </div>
   );
