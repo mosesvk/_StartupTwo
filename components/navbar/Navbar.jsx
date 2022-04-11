@@ -1,31 +1,69 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-import logo from '../../assets/logo.svg'
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import logo from '../../assets/logo.svg';
 
-import './navbar.module.css'
+import './navbar.module.css';
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <div className='flex justify-between items-center	py-8 px-24'>
-      <div className='flex-1 flex justify-start items-start'>
+      <div className='flex-1 flex justify-center items-center'>
         <div className='mr-8'>
-          <Image src={logo} alt='logoImg' height='62.56px' width='60.02px'/>
+          <Image src={logo} alt='logoImg' height='62.56px' width='60.02px' />
         </div>
-        <div className='flex flex-row child:navbar-p'> 
-          <Link as='p' href='#home'>Home</Link>
-          <Link as='p' href='#about'>About</Link>
-          <Link as='p' href='#possibility'>Explore</Link>
-          <Link as='p' href='#features'>Case Studies</Link>
-          <Link as='p' href='#blog'>Library</Link>
+        <div className='flex flex-row child:navbar-p'>
+          <Link as='p' href='#home'>
+            Home
+          </Link>
+          <Link as='p' href='#about'>
+            About
+          </Link>
+          <Link as='p' href='#possibility'>
+            Explore
+          </Link>
+          <Link as='p' href='#features'>
+            Case Studies
+          </Link>
+          <Link as='p' href='#blog'>
+            Library
+          </Link>
         </div>
         <div className='flex justify-end items-center'>
           <p className='navbar-p'>Sign in</p>
-          <button type='button' className='navbar-button'>Sign up</button>
+          <button type='button' className='navbar-button'>
+            Sign up
+          </button>
         </div>
+        {/* <div className='ml-4 hidden relative'>
+          {toggleMenu
+            ? <RiCloseLine color='fff' size={27} onClick={() => setToggleMenu(true)} />
+            : <RiMenuLine color='fff' size={27} onClick{() => setToggleMenu(true)}
+          }
+          {toggleMenu && (
+            <div className='flex flex-end items-end flex-col bg-blue-900 p-8 absolute right-0 mt-4 min-w-210 rounded-md shadow-md'>
+              <div>
+                <Link as='p' href='#home'>Home</Link>
+                <Link as='p' href='#about'>About</Link>
+                <Link as='p' href='#possibility'>Explore</Link>
+                <Link as='p' href='#features'>Case Studies</Link>
+                <Link as='p' href='#blog'>Library</Link>
+              </div>
+              <div>
+                <p className='navbar-p'>Sign in</p>
+                <button type='button' className='navbar-button'>
+                  Sign up
+                </button>
+              </div>
+            </div>
+          )}
+        </div> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
