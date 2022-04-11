@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className='flex justify-between items-center	py-8 px-24'>
+    <div className='flex justify-between items-center	lg:py-8 lg:px-24'>
       <div className='flex-1 flex justify-around items-center'>
         <div className='mr-8'>
           <Image src={logo} alt='logoImg' height='62.56px' width='60.02px' />
@@ -44,15 +44,15 @@ const Navbar = () => {
             : <RiMenu3Line color='fff' size={27} onClick={() => setToggleMenu(true)} />
           }
           {toggleMenu && (
-            <div className='flex flex-end items-end flex-col bg-blue-900 p-8 absolute right-0 mt-4 min-w-210 rounded-md shadow-md'>
-              <div className='flex flex-col child:navbar-p'>
+            <div className='flex flex-end items-end flex-col bg-gray-800 p-8 absolute right-0 mt-4 min-w-210 rounded-md shadow-md min-w-max'>
+              <div className='flex flex-col child:navbar-p child:my-2 pb-2'>
                 <Link as='p' href='#home'>Home</Link>
                 <Link as='p' href='#about'>About</Link>
                 <Link as='p' href='#possibility'>Explore</Link>
                 <Link as='p' href='#features'>Case Studies</Link>
                 <Link as='p' href='#blog'>Library</Link>
               </div>
-              <div>
+              <div className='child:my-1 child:text-right'>
                 <p className='navbar-p'>Sign in</p>
                 <button type='button' className='navbar-button'>
                   Sign up

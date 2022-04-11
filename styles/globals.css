@@ -11,7 +11,7 @@
 
 @layer components {
   .navbar-p {
-    @apply text-white font-bold text-lg capitalize mx-4 cursor-pointer
+    @apply text-white font-bold text-lg capitalize mx-4 cursor-pointer text-right
   }
 
   .navbar-button {
