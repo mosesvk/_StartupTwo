@@ -11,14 +11,10 @@
 
 @layer components {
   .navbar-p {
-    @apply text-white font-bold text-lg capitalize mx-4 cursor-pointer text-right
+    @apply text-white font-bold text-lg capitalize mx-4 cursor-pointer text-right transition ease-in-out delay-150  hover:-translate-y-2 hover:scale-110 duration-300
   }
 
   .navbar-button {
-    @apply text-white py-2 px-4 font-medium text-lg border-none outline-none cursor-pointer rounded-md bg-blue-600;
-  }
-
-  .transition-pop {
-    @apply bg-blue-500 text-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-blue-300 duration-300
+    @apply text-white py-2 px-4 font-medium text-lg border-none outline-none cursor-pointer rounded-md bg-blue-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300;
   }
 }

@@ -15,6 +15,11 @@ module.exports = {
       addVariant('child', '& > *');
       addVariant('child-hover', '& > *:hover');
       addVariant('hoveract', ['&:hover', '&:active'])
-  }
+  }, 
+  function ({ addBase, theme }) {
+    addBase({
+      h1: { fontSize: theme('fontSize.6xl') },
+    });
+  },
   ],
 }
