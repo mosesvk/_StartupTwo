@@ -54,7 +54,7 @@ const Navbar = () => {
               </div>
               <div className='child:my-1 child:text-right'>
                 <p className='navbar-p'>Sign in</p>
-                <button type='button' className='navbar-button'>
+                <button type='button' className='transition-pop'>
                   Sign up
                 </button>
               </div>
